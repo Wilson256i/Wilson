@@ -1,68 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Affordable and professional web design">
-	  <meta name="keywords" content="web design, affordable web design, professional web design">
-  	<meta name="author" content="Businge Wilson">
-    <title>Wilson Web Deisgn | Welcome</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/favicon.png">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">WILSON WEB DESIGN</span></h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilson Businge | Front-End Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Wilson.dev</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="themeToggle">🌙</button></li>
+    </ul>
+  </nav>
 
-    <section id="showcase">
-      <div class="container">
-        <h1>Affordable Professional Web Design</h1>
-        <p>Don't let budget constraints stop you from having a professional website. Contact me today</p>
-      </div>
-    </section>
+  <header>
+    <h1 class="fade-in">Wilson Businge</h1>
+    <p class="slide-in">Front-End Web Developer | UI Enthusiast | Clean Code Advocate</p>
+  </header>
 
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." required>
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./logo_html.png">
-          <h3>HTML5 Markup</h3>
-          <p>At our web design company, we take pride in developing modern and interactive websites that utilize the latest HTML5 markup. With a focus on clean code and seamless user experience, we ensure that your website stands out from the competition and delivers results. Let us transform your online presence with cutting-edge technology and stunning design.</p>
-        </div>
-        <div class="box">
-          <img src="./logo_css.png">
-          <h3>CSS3 Styling</h3>
-          <p>At our web design company, we take pride in crafting sleek and modern websites utilizing the benefits of CSS3 styling. With its powerful tools and flexible capabilities, we're able to elevate the visual appeal and usability of our web pages for a memorable user experience.</p>
-        </div>
-        <div class="box">
-          <img src="./logo_brush.png">
-          <h3>Graphic Design</h3>
-          <p>At our web design company, we prioritize using the latest graphic designs to create visually stunning web pages. Our team of experienced designers is always pushing the boundaries to incorporate modern and engaging designs that captivate and retain website visitors. From timeless typography to bold color schemes, we ensure that each element of a website is designed with the latest trends and technologies to provide a seamless and satisfying user experience. Choose us as your web design partner and let us help you take your online presence to the next level with the latest graphic designs.</p>
-        </div>
-      </div>
-    </section>
+  <section class="section" id="about">
+    <div class="card fade-in">
+      <h2>About Me</h2>
+      <p>
+        I'm a front-end web developer with a solid grasp of HTML, CSS, and JavaScript. I'm passionate about crafting responsive, user-friendly websites and constantly learning modern technologies like React and Tailwind CSS.
+      </p>
+    </div>
 
-    <footer>
-      <p>Wilson Web Deisgn, Copyright &copy; 2023</p>
-    </footer>
-  </body>
+    <div class="card slide-in" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>React (in progress)</li>
+        <li>Version Control with Git & GitHub</li>
+        <li>Clean UI/UX Principles</li>
+      </ul>
+    </div>
+
+    <div class="card fade-in">
+      <h2>Tech Stack Usage</h2>
+      <canvas id="skillsChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="card fade-in">
+      <h2>Interests</h2>
+      <p>
+        Web Technologies, UI Design, Front-End Frameworks, Clean Code, Responsive Design, Visual Aesthetics.
+      </p>
+    </div>
+
+    <div class="card slide-in" id="projects">
+      <h2>Projects</h2>
+      <p>Coming soon — a collection of front-end projects showcasing my skills and creativity.</p>
+    </div>
+
+    <div class="card slide-in" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" action="mailto:busingewilson256i@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wilson Businge | Connect with me via GitHub or LinkedIn</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
